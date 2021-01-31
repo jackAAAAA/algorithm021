@@ -1,7 +1,7 @@
 # 学习笔记
 ## 高级动态规划
 ### 递归
-``` ruby
+``` java
 public void recur(int level, int param) {
     // terminator 1 递归终止条件
     if (level > MAX_LEVEL) {
@@ -16,7 +16,7 @@ public void recur(int level, int param) {
 }
 ```
 ### 分治
-``` ruby
+``` java
 private static int divide_conquer(Problem problem, ) {
   
     if (problem == NULL) {
@@ -129,9 +129,8 @@ public static int myAtoi(String str){
             * 比较hash值：如果hash值不同，字符串必然不匹配；如果hash值相同，还需要使用朴素算法再次判断
     
     3. KMP算法
-    ``` ruby
-    KMP算法(Knuth-Morris-Pratt)的思想就是,当子串与目标字符串不匹配时,其实你已经知道了前面已经匹配成功那一部分的字符(包括子串与目标字符串)。以阮一峰的文章为例,当空格与D不匹配时,你其实知道前面六个字符是"ABCDAB" .KMP算法的想法是,设法利用这个已知信息,不要把"搜索位置"移回已经比较过的位置,继续把它向后移,这样就提高了效率。
-    ```
+    
+    > KMP算法(Knuth-Morris-Pratt)的思想就是,当子串与目标字符串不匹配时, 其实你已经知道了前面已经匹配成功那一部分的字符(包括子串与目标字符串)。以阮一峰的文章为例,当空格与D不匹配时,你其实知道前面六个字符是"ABCDAB" .KMP算法的想法是,设法利用这个已知信息,不要把"搜索位置"移回已经比较过的位置,继续把它向后移,这样就提高了效率。
 
     ## 不同路径II 状态转移方程
     ``` ruby
